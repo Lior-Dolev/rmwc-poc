@@ -1,0 +1,82 @@
+
+
+$border-width: 1px;
+$button-min-width: 90px;
+$button-padding: auto 10px;
+$button-height: 30px;
+
+$button-default-bg: $color-greyscale-300;
+$button-default-bg-hover: $color-greyscale-500;
+$button-default-bg-active: #CCCDCF;
+$button-default-bg-disabled: #E7E9EB;
+
+$button-primary-bg: $color-primary-800;
+$button-primary-bg-hover: #253347;
+$button-primary-bg-active: #1C2636;
+
+$button-ghost-bg: transparent;
+
+.cp-button {
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  min-width: $button-min-width;
+  padding: $button-padding;
+  height: $button-height;
+  outline: 0;
+}
+
+.cp-button {
+  color: $default-text-color;
+  background-color: $button-default-bg;
+  border: $border-width solid $color-border-default;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-default-bg-hover;
+  }
+  
+  &:active {
+    border-color: $color-border-default-active;
+    background-color: $button-default-bg-active;
+  }
+
+  &:focus {
+    border-color: $color-border-default-focus;
+  }
+
+  &.invalid {
+    border-color: $color-border-default-invalid;
+  }
+
+  &:disabled {
+    background-color: $button-default-bg-disabled;
+    border-color: $button-default-bg-disabled;
+    color: $disabled-color;
+    cursor: default;
+  }
+}
+
+.cp-button.primary:enabled {
+  background-color: $button-primary-bg;
+  color: $color-greyscale-100;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $button-primary-bg-hover;
+  }
+
+  &:active {
+    background-color: $button-primary-bg-active;
+  }
+}
+
+.cp-button.ghost {
+  border-color: transparent;
+  text-transform: uppercase;
+
+  &:not(:hover):not(:active), &:disabled {
+    background-color: transparent;
+  }
+}

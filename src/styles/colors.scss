@@ -1,0 +1,51 @@
+
+$color-primary-100: #E8F1FF;
+$color-primary-200: #E1F2FF;
+$color-primary-300: #BCE3FE;
+$color-primary-400: #ADBED7;
+$color-primary-500: #4FB4F1;
+$color-primary-600: #3594FF;
+$color-primary-700: #3474C5;
+$color-primary-800: #2E3F58;
+$color-primary-900: #171F2C;
+
+$color-greyscale-100: #FFF;
+$color-greyscale-200: #F7F7F7;
+$color-greyscale-300: #E8E9EB;
+$color-greyscale-400: #E0E4E8;
+$color-greyscale-500: #DEDFE0;
+$color-greyscale-600: #A7A9AC;
+$color-greyscale-700: #848484;
+$color-greyscale-800: #7C7C7C;
+$color-greyscale-900: #333333;
+
+$color-status-ok: #56B40A;
+$color-status-info: #B1DBFF;
+$color-status-very-low: #79C5F7;
+$color-status-warning: #FFD546;
+$color-status-high: #FFB72D;
+$color-status-very-high: #FF9126;
+$color-status-error: #F24E4E;
+
+$color-cpbrand: #E45785;
+$color-misc-selected: #553248;
+
+$color-infographics-100: #79C5F7;
+$color-infographics-150: #308CC8;
+$color-infographics-200: #6767EC;
+$color-infographics-250: #4646C6;
+$color-infographics-300: #9256D9;
+$color-infographics-350: #6F38B1;
+$color-infographics-400: #C038CC;
+$color-infographics-450: #93219E;
+$color-infographics-500: #D83790;
+$color-infographics-550: #AE0E66;
+$color-infographics-600: #1B959A;
+$color-infographics-650: #096C6F;
+$color-infographics-700: #DFBF00;
+$color-infographics-750: #B79900;
+
+$color-border-default: #D2D5D9;
+$color-border-default-active: #B6B9BA;
+$color-border-default-focus: $color-primary-500;
+$color-border-default-invalid: $color-status-error;

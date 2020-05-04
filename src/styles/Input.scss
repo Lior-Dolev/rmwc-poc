@@ -1,0 +1,75 @@
+
+$border-width: 1px;
+$input-padding: 0px 10px;
+$input-height: 30px;
+
+.cp-input {
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  line-height: $line-height;
+  height: $input-height;
+
+  ::placeholder {
+    color: #C6C9CF;
+    font-style: italic;
+  }
+}
+
+.cp-input > input {
+  background-color: $color-greyscale-100;
+  padding: $input-padding;
+  outline: 0;
+  height: $input-height;
+  box-sizing: border-box;
+  border: $border-width solid $color-border-default;
+  color: $color-greyscale-900;
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  line-height: $line-height;
+  
+  &:focus {
+    border-color: $color-border-default-focus;
+  }
+
+  &:read-only {
+    background-color: #E7E9EB;
+  }
+
+  &:disabled {
+    background-color: #E7E9EB;
+    color: $disabled-color
+  }
+}
+
+.cp-input.invalid > input {
+  border-color: $color-border-default-invalid;
+}
+
+.cp-input.valid > input {
+  border-color: $color-status-ok;
+}
+
+.cp-input.warning > input {
+  border-color: $color-status-warning;
+}
+
+.mdc-text-field-helper-line {
+  font-family: $font-family;
+  font-size: $font-size-sm;
+
+  & > p {
+    margin: 10px 0px 0px;
+  }
+
+  .cp-input-msg.invalid {
+    color: $color-status-error;
+  }
+
+  .cp-input-msg.valid {
+    color: $color-status-ok;
+  }
+  
+  .cp-input-msg.warning {
+    color: $color-status-warning;
+  }
+}
